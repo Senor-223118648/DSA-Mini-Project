@@ -11,9 +11,9 @@ public class CampusServiceCentre {
     private static ArrayStatistics dailyStats = new ArrayStatistics(50);
     private static Scanner scanner = new Scanner(System.in);
 
+    // pre-loads a few arrivals so the menu isn't empty on first run
     public static void main(String[] args) {
-        loadDemoData(); // pre-loads a few arrivals so the menu isn't empty on first run
-
+        loadDemoData(); 
         boolean running = true;
         while (running) {
             printMenu();
