@@ -1,7 +1,8 @@
 # DSA-Mini-Project
 DSA Group Assignment
-import java.util.Scanner;
-import java.util.Arrays;
+
+         import java.util.Scanner;
+         import java.util.Arrays;
 
     //--Part D---
     public class CampusServiceCentre {
