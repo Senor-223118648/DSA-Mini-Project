@@ -168,4 +168,4 @@ DSA Group Assignment
         waitingQueue.enqueue(new Student("224012345", "Helena", "Academic Enquiry", 10));
         waitingQueue.enqueue(new Student("225098765", "Petrus", "Document Collection", 6));
     }
-}
+    }
