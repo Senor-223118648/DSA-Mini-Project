@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 
-public class CampusServiceCentre {
+    public class CampusServiceCentre {
 
     private static Queue waitingQueue = new Queue(20);
     private static StudentLinkedList recordList = new StudentLinkedList();
