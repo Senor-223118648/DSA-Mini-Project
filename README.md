@@ -161,11 +161,11 @@ DSA Group Assignment
     }
 
     private static void loadDemoData() {
-        waitingQueue.enqueue(new Student("221045678", "Maria", "Registration", 12));
-        waitingQueue.enqueue(new Student("222034512", "Tomas", "Student Card", 5));
-        waitingQueue.enqueue(new Student("223041876", "Ndapewa", "Fees", 8));
-        waitingQueue.enqueue(new Student("221067341", "Simon", "Documents", 4));
-        waitingQueue.enqueue(new Student("224012345", "Helena", "Academic Enquiry", 10));
-        waitingQueue.enqueue(new Student("225098765", "Petrus", "Document Collection", 6));
+    waitingQueue.enqueue(new Student("221045678", "Maria", "Registration", 12));
+    waitingQueue.enqueue(new Student("222034512", "Tomas", "Student Card", 5));
+    waitingQueue.enqueue(new Student("223041876", "Ndapewa", "Fees", 8));
+    waitingQueue.enqueue(new Student("221067341", "Simon", "Documents", 4));
+    waitingQueue.enqueue(new Student("224012345", "Helena", "Academic Enquiry", 10));
+    waitingQueue.enqueue(new Student("225098765", "Petrus", "Document Collection", 6));
     }
-    }
+    }   
