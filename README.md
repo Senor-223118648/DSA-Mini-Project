@@ -3,7 +3,7 @@ DSA Group Assignment
 import java.util.Scanner;
 import java.util.Arrays;
 
-
+    //--Part D---
     public class CampusServiceCentre {
 
     private static Queue waitingQueue = new Queue(20);
