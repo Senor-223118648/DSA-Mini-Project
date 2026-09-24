@@ -4,7 +4,7 @@ DSA Group Assignment
          import java.util.Scanner;
          import java.util.Arrays;
 
-    //--Part D---
+    //--Part D---//
     public class CampusServiceCentre {
 
     private static Queue waitingQueue = new Queue(20);
@@ -169,3 +169,5 @@ DSA Group Assignment
     waitingQueue.enqueue(new Student("225098765", "Petrus", "Document Collection", 6));
     }
     }   
+
+    
