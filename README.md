@@ -79,14 +79,13 @@ DSA Group Assignment
     // ---- Option 2: Queue - dequeue, then log into LinkedList (A2) and ArrayStatistics (A4) ----
     private static void handleServeNext() {
         Student served = waitingQueue.dequeue();
-        if (served != null) {
             System.out.println("Now serving: " + served);
             recordList.insertAtEnd(served);                       // keep a permanent record
             dailyStats.addServiceTime(served.estimatedServiceTime); // track for daily stats
         }
     }
 
-    // ---- Option 4: Linked List - insertion ----
+    // ---- Option 4: Linked List - insertion ----//
     private static void handleAddRecord() {
         System.out.print("Student No: ");
         String no = scanner.nextLine();
@@ -113,7 +112,7 @@ DSA Group Assignment
         }
     }
 
-    // ---- Option 7: Linked List - deletion (by position, matching the team's deleteStudent(int)) ----
+    // ---- Option 7: Linked List - deletion (by position, matching the team's deleteStudent(int)) ----//
     private static void handleRemoveRecord() {
         System.out.println("Current records:");
         recordList.displayStudents();
@@ -124,7 +123,7 @@ DSA Group Assignment
         recordList.displayStudents();
     }
 
-    // ---- Option 9: Sorting algorithm(s) on today's recorded service times ----
+    // ---- Option 9: Sorting algorithm(s) on today's recorded service times ----//
     private static void handleSortServiceTimes() {
         int total = dailyStats.getTotalStudentsServed();
         if (total == 0) {
@@ -156,7 +155,7 @@ DSA Group Assignment
             scanner.next();
         }
         int value = scanner.nextInt();
-        scanner.nextLine(); // consume leftover newline
+        scanner.nextLine(); // consume leftover newline//
         return value;
     }
 
