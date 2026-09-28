@@ -1,47 +1,26 @@
 # DSA-Mini-Project
 DSA Group Assignment
 
-         import java.util.Scanner;
-         import java.util.Arrays;
+## Campus Service Centre Simulation (Java)
 
-    //--Part D---//
-    public class CampusServiceCentre {
+This repository now contains a Java console simulation for the NUST Campus Service Centre scenario.
 
-    private static Queue waitingQueue = new Queue(20);
-    private static StudentLinkedList recordList = new StudentLinkedList();
-    private static ArrayStatistics dailyStats = new ArrayStatistics(50);
-    private static Scanner scanner = new Scanner(System.in);
+Implemented requirements:
+- **Array** storage of student requests
+- **Queue** (custom linked queue) for first-come-first-served service order
+- **Linked List** for served-history tracking
+- **Searching** (linear search by student number)
+- **Selection Sort**, **Insertion Sort**, **Merge Sort**, and **Quick Sort** by estimated service time
+- **Stack** exercise (balanced brackets checker) as a separate algorithmic task
 
-    // pre-loads a few arrivals so the menu isn't empty on first run
-    public static void main(String[] args) {
-        loadDemoData(); 
-        boolean running = true;
-        while (running) {
-            printMenu();
-            int choice = readInt();
+## Build and Run
 
-            switch (choice) {
-                case 1: handleAddToQueue(); break;
-                case 2: handleServeNext(); break;
-                case 3: waitingQueue.displayQueue(); break;
-                case 4: handleAddRecord(); break;
-                case 5: recordList.displayStudents(); break;
-                case 6: handleSearchRecord(); break;
-                case 7: handleRemoveRecord(); break;
-                case 8: dailyStats.displayStatistics(); break;
-                case 9: handleSortServiceTimes(); break;
-                case 10: SortExperiment.run(); break;
-                case 11:
-                    running = false;
-                    System.out.println("Exiting Campus Service Centre. Goodbye!");
-                    break;
-                default:
-                    System.out.println("Invalid option. Please choose 1-11.");
-            }
-        }
-        scanner.close();
-    }
+From the repository root:
 
+```bash
+javac src/CampusServiceCentreSimulation.java
+java -cp src CampusServiceCentreSimulation
+```
     private static void printMenu() {
         System.out.println();
         System.out.println("========================================");
