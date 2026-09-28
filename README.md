@@ -63,7 +63,7 @@ DSA Group Assignment
 
     // ---- Option 1: Queue - enqueue ----
     private static void handleAddToQueue() {
-        System.out.print("Student Number: ");
+        System.out.print("Student No: ");
         String no = scanner.nextLine();
         System.out.print("Name: ");
         String name = scanner.nextLine();
@@ -72,7 +72,7 @@ DSA Group Assignment
         System.out.print("Estimated Service Time (min): ");
         int time = readInt();
 
-        waitingQueue.enqueue(new Student(number, name, type, time));
+        waitingQueue.enqueue(new Student(no, name, type, time));
         System.out.println("Added to queue.");
     }
 
@@ -90,7 +90,7 @@ DSA Group Assignment
 
     // ---- Option 4: Linked List - insertion ----//
     private static void handleAddRecord() {
-        System.out.print("Student Number: ");
+        System.out.print("Student No: ");
         String no = scanner.nextLine();
         System.out.print("Name: ");
         String name = scanner.nextLine();
@@ -99,7 +99,7 @@ DSA Group Assignment
         System.out.print("Estimated Service Time (min): ");
         int time = readInt();
 
-        recordList.insertAtEnd(new Student(number, name, type, time));
+        recordList.insertAtEnd(new Student(no, name, type, time));
         System.out.println("Record added.");
     }
 
@@ -111,7 +111,7 @@ DSA Group Assignment
         if (found != null) {
             System.out.println("Found: " + found);
         } else {
-            System.out.println("No record found for " + number);
+            System.out.println("No record found for " + no);
         }
     }
 
