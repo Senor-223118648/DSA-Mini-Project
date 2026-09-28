@@ -80,6 +80,7 @@ DSA Group Assignment
     private static void handleServeNext() {
         Student served = waitingQueue.dequeue();
             System.out.println("Now serving: " + served);
+             if (served != null) 
             recordList.insertAtEnd(served);                       // keep a permanent record
             dailyStats.addServiceTime(served.estimatedServiceTime); // track for daily stats
         }
