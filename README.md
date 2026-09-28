@@ -78,13 +78,15 @@ DSA Group Assignment
 
     // ---- Option 2: Queue - dequeue, then log into LinkedList (A2) and ArrayStatistics (A4) ----
     private static void handleServeNext() {
-        Student served = waitingQueue.dequeue();
-            System.out.println("Now serving: " + served);
-             if (served != null) 
-            recordList.insertAtEnd(served);                       // keep a permanent record
-            dailyStats.addServiceTime(served.estimatedServiceTime); // track for daily stats
-        }
+    Student served = waitingQueue.dequeue();
+    if (served == null) {
+        System.out.println("The waiting queue is empty. No one to serve.");
+        return;
     }
+    System.out.println("Now serving: " + served);
+    recordList.insertAtEnd(served);                          // keep record permanent
+    dailyStats.addServiceTime(served.estimatedServiceTime);  // daily stats tracking
+}
 
     // ---- Option 4: Linked List - insertion ----//
     private static void handleAddRecord() {
