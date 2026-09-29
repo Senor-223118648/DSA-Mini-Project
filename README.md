@@ -1,5 +1,13 @@
 # DSA-Mini-Project
 DSA Group Assignment
+# Group Members Github usernames:
+# Senor Kazonganga - Senor-223118648
+# Lovisa Mutilifa - LOVISA26
+# Laina Shilemba - 2250008912@nust.na
+# Kayla Nangula Brandt - KaylaNangulaBrandt
+# Tjivekera Kamurongo - Tito38T
+
+
 
 ## Campus Service Centre Simulation (Java)
 
